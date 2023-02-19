@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url('fonte/IDroid.otf');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor1:#8BE8BF;
+    --cor2:#44E39E;
+    --cor3:#35B07B;
+    --cor4:#1E6345;
+    --cor5:#3C6352;
+}
+body{
+    background-color: var(--cor2);
+}
+main{
+    background-color: white;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;
+}
+main img{
+    width: 100%;
+}
+header{
+    background-color: var(--cor4);
+}
+header > h1{
+    font-family: 'android', 'cursive';
+    color: white;
+}
+header > p{
+    color: white;
+}
+h2{
+    font-family: 'android', 'cursive';
+    font-size: large;
+}
+nav{
+    background-color: var(--cor5);
+}
