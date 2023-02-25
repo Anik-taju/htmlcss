@@ -12,13 +12,41 @@ header{
     text-align: center;
     background-color: black;
     color: white;
+    padding-top: 25px;
+    padding-bottom: 30px;
 }
+h1{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+    font-size: 3em;
+}
+header > p{
+    margin-top: 0px;
+    padding-top: -20px;
+    border-top: 0px;
 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
 main{
     font-family: 'Sriracha';
 }
 .corpo{
     background-color: white;
+}
+.corpo > p{
+}
+div > p{
+    min-height: 10px;
+    max-height: 110px;
+    min-width: 100px;
+    max-width: 100%;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
 }
 #img1{
     background-image: url('img/background001.jpg');
@@ -38,7 +66,7 @@ main{
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 20px;
+    padding-left: 10px;
     margin-bottom: 90px;
 }
 #c03{
@@ -52,15 +80,25 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
-    height: 150vh;
+    height: 160vh;
 }
 #c04{
     background-color: transparent;
     width: 300px;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    margin-bottom: 50px;
+}
+#c05{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
 }
 footer{
     text-align: center;
     color: white;
+    margin: 5px;
 }
