@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+@import url('https://fonts.cdnfonts.com/css/century-gothic');
+
+body{
+background-color: #32363E;
+color: white;
+font-family: 'Century Gothic', sans-serif;
+font-size: 5em;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 97vh;
+}
+
+.relative{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+}
+div{
+    border-radius: 5px;
+}
+
+.absolute{
+    position: absolute;
+    height: 380px;
+    width: 380px;
+    background-color: #32363E;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.letter span{
+    color: #5c5c5c;
+}
+
+/*animacao de flutuacao*/
+
+.relative{
+    animation: float 2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(-5%);
+    }
+}
+
+/*Mudanca de cores nas letras*/
+
+.letter span:nth-of-type(1){ /*A*/
+    animation-name: a1;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out; 
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+
+}
+@keyframes a1{
+    0%{
+            color: aqua;
+            text-shadow: 0px 0px 20px aqua, 0px 0px 40px aqua, 0px 0px 60px aqua;
+    }
+}
+
+
+.letter span:nth-of-type(2){  /*N*/
+    animation-name: a2;
+    animation-delay: 10s;
+    animation-timing-function: ease-in-out; 
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+}
+@keyframes a2{
+    0%{
+            color: red;
+            text-shadow: 0px 0px 20px red, 0px 0px 40px red, 0px 0px 60px red;
+    }
+
+}
+
+.letter span:nth-of-type(3){ /*I*/
+    animation-name: a3;
+    animation-delay: 20s;
+    animation-timing-function: ease-in-out; 
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+    
+}
+@keyframes a3{
+    0%{
+            color: white;
+            text-shadow: 0px 0px 20px rgb(20, 20, 20), 0px 0px 40px white, 0px 0px 60px white;
+    }
+
+}
+.letter span:nth-of-type(4){ /*K*/
+    animation-name: a4;
+    animation-delay: 30s;
+    animation-timing-function: ease-in-out; 
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+}
+@keyframes a4{
+    0%{
+            color: #4bb354;
+            text-shadow: 0px 0px 20px #96B34B, 0px 0px 40px #96B34B, 0px 0px 60px #96B34B;
+    }
+
+}
+.letter span:nth-of-type(5){ /*!*/
+    animation-name: a5;
+    animation-delay: 40s;
+    animation-timing-function: ease-in-out; 
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+}
+@keyframes a5{
+    0%{
+            color: #F3D25B;
+            text-shadow: 0px 0px 20px #F3D25B, 0px 0px 40px #F3D25B, 0px 0px 60px #F3D25B;
+    }
+
+}
+
+/*animacao de fundo*/
+#rel2{
+    animation-name: f1; /*A*/
+    animation-duration: 36s;
+    animation-iteration-count: 1;
+    animation-delay: 1.25s;
+}
+ @keyframes f1{
+    0%{
+        background-color: #4bb354;
+        animation-delay: 0.3s;
+        animation-duration: 9s;
+        box-shadow: 0px 0px 100px #4bb354;
+    }
+    30%{
+        background-color: white;
+        box-shadow: 0px 0px 100px white;
+        animation-duration: 9s;
+        animation-delay: 0.3s;
+    }
+    60%{
+        background-color: red;
+        box-shadow: 0px 0px 100px red;
+        animation-duration: 9s;
+        animation-delay: 0.3s;
+    }
+    90%{
+        background-color: aqua;
+        box-shadow: 0px 0px 100px aqua;
+        animation-duration: 9s;
+        animation-delay: 0.3s;
+    }
+ }
+
+ .rel3{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: #4bb354;
+ }
+ .rel3{
+    animation: float 2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(-5%);
+    }
+}
